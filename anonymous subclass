@@ -1,0 +1,23 @@
+
+class HelloWorld {
+    public static void main(String[] args) {
+    
+    new parent().method();
+    
+    
+    new parent(){
+       @Override
+       public void method()
+       {
+           System.out.println("inside the main method");
+           //ananonymous sublass is created just for overriding the parent class
+       }
+    }.method();
+    }
+}
+class parent{
+    public  void method()
+    {
+       System.out.println("inside parent class");
+    }
+}
